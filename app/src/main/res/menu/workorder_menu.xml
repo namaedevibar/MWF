@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Direction"
+        android:id="@+id/direction_menu"
+        android:icon="@drawable/direction"
+        app:showAsAction="always"></item>
+
+    <item
+        android:title="Bookmark"
+        android:id="@+id/bookmark_menu"
+        android:icon="@drawable/bookmark"
+        app:showAsAction="always"></item>
+
+</menu>

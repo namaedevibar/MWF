@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_work_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activity.devibar.mobileworkforce.WorkOrder">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/scrollView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_height="wrap_content"
+                android:layout_width="384dp"
+                android:background="#1ea15f"
+                android:id="@+id/constraintLayout"
+                tools:layout_conversion_absoluteX="0dp"
+                tools:layout_conversion_absoluteY="0dp"
+                tools:layout_conversion_absoluteWidth="384dp"
+                tools:layout_conversion_absoluteHeight="230dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textSize="15sp"
+                    android:text="Work Order No."
+                    android:singleLine="true"
+                    android:id="@+id/lblWorkOrderName"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="normal|bold"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textSize="15sp"
+                    android:text="Deadline"
+                    android:singleLine="true"
+                    android:id="@+id/lblDeadline"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDate"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textSize="23sp"
+                    android:text="Deadline"
+                    android:singleLine="true"
+                    android:id="@+id/txtDeadline"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lblDeadline"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintVertical_bias="0.32999998" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textSize="15sp"
+                    android:text="Date/Time Added"
+                    android:singleLine="true"
+                    android:id="@+id/lblDateTime"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtWorkOrderName"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textSize="23sp"
+                    android:text="Value"
+                    android:singleLine="true"
+                    android:id="@+id/txtWorkOrderName"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lblWorkOrderName"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textSize="23sp"
+                    android:text="Date"
+                    android:singleLine="true"
+                    android:id="@+id/txtDate"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintTop_toBottomOf="@+id/lblDateTime"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="24dp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.0">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/clipboard"
+                    android:id="@+id/imageView2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:text="Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="normal|bold"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView2"
+                    android:layout_marginLeft="16dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    tools:layout_editor_absoluteX="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/view2" />
+
+                <TextView
+                    android:text="Work Order Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view2"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Work Order Type Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtWorkOrderType"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    tools:layout_editor_absoluteX="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtWorkOrderType"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/view3" />
+
+                <TextView
+                    android:text="Account No"
+                    android:textStyle="normal|bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view3"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Account Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAccountNumber"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    tools:layout_editor_absoluteX="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAccountNumber"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/view4" />
+
+                <TextView
+                    android:text="kWh Meter Serial No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view4"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="kWh Meter Serial Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtkWh"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    tools:layout_editor_absoluteX="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtkWh"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/view5" />
+
+                <TextView
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view5"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAddress"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view6"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+
+                <TextView
+                    android:text="Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view6"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Descrption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDesc"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view7"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDesc" />
+
+
+                <TextView
+                    android:text="Special Instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view7"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Special Instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSpecInstruct"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view8"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSpecInstruct" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/list"
+                    android:id="@+id/imageView3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view8"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:text="Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="normal|bold"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView3"
+                    android:layout_marginLeft="16dp" />
+
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    tools:layout_editor_absoluteX="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/view9" />
+
+                <TextView
+                    android:text="Assigned To"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view9"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Assigned To"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAssignedTo"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view10"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAssignedTo" />
+
+                <TextView
+                    android:text="Supervisor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view10"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Supervisor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSupervisor"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view11"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSupervisor" />
+
+                <TextView
+                    android:text="Expiration/Date Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view11"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtExpDate"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    android:textSize="20sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <TextView
+                    android:text="Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtExpTime"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toRightOf="@+id/txtExpDate"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    android:textSize="20sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view12"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtExpTime" />
+
+                <TextView
+                    android:text="Current Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view12"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="Current Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtStatus"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp" />
+
+                <View
+                    android:layout_width="367dp"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7"
+                    android:id="@+id/view13"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtStatus"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
